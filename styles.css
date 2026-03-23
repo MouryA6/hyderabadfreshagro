@@ -751,14 +751,16 @@ body.rtl .section h2 {
     display: none;
   }
 
-  /* Keep lang toggle visible on mobile */
-  .nav-links .lang-toggle {
-    display: inline-block;
+  /* lang-switch — smaller on mobile so it fits the header */
+  .lang-switch {
+    display: inline-flex;
+    padding: 2px;
+    flex-shrink: 0;
   }
 
-  /* Show only the lang toggle + contact on mobile */
-  .nav .lang-toggle {
-    display: inline-block;
+  .lang-opt {
+    padding: 4px 10px;
+    font-size: 0.75rem;
   }
 
   .hero h2 {
@@ -766,12 +768,26 @@ body.rtl .section h2 {
   }
 
   h1 {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
   }
 
   .logo {
-    width: 68px;
-    height: 68px;
+    width: 52px;
+    height: 52px;
+  }
+
+  .tagline {
+    display: none;
+  }
+
+  .brand {
+    gap: 10px;
+    min-width: 0;
+    flex: 1;
+  }
+
+  .nav {
+    gap: 10px;
   }
 
   .cta-box {

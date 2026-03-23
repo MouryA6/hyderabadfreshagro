@@ -28,12 +28,14 @@
       <a href="#products" data-i18n="nav_products">Products</a>
       <a href="#markets" data-i18n="nav_markets">Markets</a>
       <a href="#why-us" data-i18n="nav_why">Why Us</a>
-      <div class="lang-switch" onclick="toggleLanguage()" role="button" aria-label="Toggle language">
-        <span class="lang-opt active" id="opt-en">EN</span>
-        <span class="lang-opt" id="opt-ar">عربي</span>
-      </div>
       <a href="#contact" class="btn nav-cta" data-i18n="nav_contact">Contact Us</a>
     </nav>
+
+    <!-- Lang toggle is OUTSIDE nav-links so it always shows on mobile too -->
+    <div class="lang-switch" onclick="toggleLanguage()" role="button" aria-label="Toggle language">
+      <span class="lang-opt active" id="opt-en">EN</span>
+      <span class="lang-opt" id="opt-ar">عربي</span>
+    </div>
   </div>
 </header>
 
